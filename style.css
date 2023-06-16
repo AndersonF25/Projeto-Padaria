@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&family=Roboto:wght@300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    height: 300vh;
+}
+
+
+.container-nav {
+    width: 100%;
+    margin: 0 auto;
+    height: 80px;
+}
+
+.nav-bar {
+    width: 100%;
+    padding: 30px 50px;
+}
+
+.navbar-list {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+    cursor: pointer;
+}
+
+.navbar-list a {
+    font-size: 1.3em;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+}
+
+.container-pai {
+    height: 1100px;
+    background-color: rgba(167, 167, 167, 0.788);
+    position: relative;
+}
+
+.container-header {
+    height: 800px;
+    width: 100%;
+    background: url(imagens/bg-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+.container-card {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    justify-content: center;
+    gap: 40px;
+    bottom: -600px;
+    flex-wrap: wrap;
+}
+
+.container-card .card {
+    width: 270px;
+    height: 310px;
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.container-card .card span {
+    font-size: 3em;
+    font-weight: 600;
+    color: rgba(134, 134, 134, 0.788);
+}
+
+.container-card .card h2 {
+    font-size: 1.2em;
+    padding: 20px 0;
+    font-weight: 500;
+}
+
+.container-card .card p {
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.secao2 {
+    width: 100%;
+    background-color: rgba(167, 167, 167, 0.788);
+    height: 960px;
+}
+
+.secao2 h2{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 3.4em;
+    color: #fff;
+    font-weight: 700;
+}
+
+.conteudos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    max-width: 900px;
+    margin: auto;
+    gap: 80px;
+    padding: 30px 0;
+}
+
+.conteudos .conteudo1{
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+
+.conteudo1 h3{
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+.conteudo1 p{
+    color: #fff;
+    font-size: 1.2em;
+    padding-bottom: 50px;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.button a{
+    background-color: rgba(167, 167, 167, 0.788);
+    padding: 15px 40px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font: 1.3em;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.profissionais{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.profissionais h3{
+    padding: 60px 0;
+    font-size: 3.5em;
+    text-align: center;
+}
+
+.perfis{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    max-width: 1000px;
+}
+
+.perfil h2{
+    font-size: 1.3em;
+}
+
+.perfil #padeiros{
+    width: 210px;
+    height: 225px;
+    border-radius: 15px;
+}
+
+.perfil .padeiro-1{
+    background:url(imagens/padeiro-1.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.perfil .padeiro-2{
+    background:url(imagens/padeiro-2.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+.perfil .padeiro-3{
+    background:url(imagens/padeiro-3.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.perfil .padeiro-4{
+    background:url(imagens/padeiro-4.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.perfil .padeiro-5{
+    background:url(imagens/padeiro-5.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.perfil .padeiro-6{
+    background:url(imagens/padeiro-6.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+.perfil .padeiro-7{
+    background:url(imagens/padeiro-7.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.perfil .padeiro-8{
+    background:url(imagens/padeiro-8.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+ .midias-sociais img{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.carrousel{
+    margin-top: 40px;
+    background-image: url(imagens/bg-section.jpg);
+    width: 100%;
+    height: 720px;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.carrousel h3{
+    font-size: 3em;
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.678);
+}
+
+.carrousel p{
+    color: #e4e4e4;
+    font-size: 1.6em;
+    max-width: 900px;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.664);
+}
+
+.carrousel .buttons{
+    display: flex;
+    gap: 80px;
+    margin-top: 60px;
+}
+
+.buttons .btn1{
+    padding: 15px 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.buttons .btn1:hover{
+    background-color: rgba(167, 167, 167, 0.788);
+    color: #fff;
+}
+
+.buttons .btn2{
+    padding: 15px 40px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.buttons .btn2:hover{
+    background-color: #fff;
+    color: #000000;
+}
+
+.request-information{
+    height: 350px;
+    width: 100%;
+    background-color: rgba(167, 167, 167, 0.788);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 70px;
+}
+
+.request-information h3{
+    color: #fff;
+    font-size: 3.5em;
+}
+
+.request-information span{
+    color: #fff;
+    font-size: 3.7em;
+    font-weight: 900;
+}
+
+.request-information a{
+    border: 2px solid #fff;
+    padding: 2px 50px;
+    margin-top: 40px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.request-information a:hover{
+    background-color: #fff;
+    color: rgba(167, 167, 167, 0.788);
+}
+
+.exemplos{
+    width: 100%;
+    margin: auto;  
+}
+
+.bg-section{
+    height: 400px;
+    background-color: rgba(167, 167, 167, 0.788);
+    width: 100%;
+}
+.doces{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px, 1fr));
+    max-width: 1300px;
+    margin: auto;
+    top: -250px;
+}
+
+.doce{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start ;
+    justify-content: center;
+}
+
+.doce h3{
+    padding: 20px 0;
+    font-size: 1.8em;
+}
+
+.doce .img{
+    width: 420px;
+    height: 430px;
+    border-radius: 25px 25px 0 0 ;
+}
+
+.doce #cookie{
+    background: url(imagens/cookie.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.doce #pao{
+    background: url(imagens/pao-doce.jpg);
+    background-position: center center;
+    background-size: cover;
+
+}
+.doce #pao-frances{
+    background: url(imagens/pao-frances.jpg);
+    background-position: center center;
+    background-size: cover;
+
+}
+
+#contatos{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit{
+    margin-top: -130px;
+}
+
+.horarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 270px;
+}
+
+.horarios h4{
+    font-size: 1.1em;
+}
+
+.horarios a{
+    font-size: 1.1em;
+    color:rgba(124, 124, 124, 0.788) ;
+}
+
+.horarios p, span{
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.rodape{
+    width: 100%;
+}
+
+.rodape p {
+    text-align: center;
+}
