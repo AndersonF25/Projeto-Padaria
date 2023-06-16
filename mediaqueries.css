@@ -192,6 +192,9 @@
     .container-card .card p{
         line-height: 30px;
     }
+    .secao2 .conteudos .conteudo1 p{
+        padding: 0 20px;
+    }
 }
 
 @media (max-width:400px) {
