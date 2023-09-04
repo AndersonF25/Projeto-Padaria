@@ -444,3 +444,65 @@ body {
 .rodape p {
     text-align: center;
 }
+
+
+/* animation scroll */
+
+.js-left{
+    opacity: 0;
+    transition: 1s;
+    transform: translate3d(-30px,0 ,0);
+}
+.js-right{
+    opacity: 0;
+    transition: 1s;
+    transform: translate3d(30px, 0,0);
+}
+
+.js-left.ativo,
+.js-right.ativo{
+    opacity: 1;
+}
+
+.js-left.ativo{
+    transform: translate3d(0,0,0);
+}
+
+.js-right.ativo{
+    transform: translate3d(0,0,0);
+}
+
+
+.js-top{
+    opacity: 0;
+    transition: 1s;
+    transform: translate3d(0,-30px,0);
+}
+
+.js-top.ativo{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
+
+.js-padeiros-left{
+    opacity: 0;
+    transition: 1s;
+    transform: translate3d(-30px,0,0);
+}
+
+.js-padeiros-left.ativo{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
+.js-padeiros-right{
+    opacity: 0;
+    transition: 1s;
+    transform: translate3d(30px,0,0);
+}
+
+.js-padeiros-right.ativo{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
